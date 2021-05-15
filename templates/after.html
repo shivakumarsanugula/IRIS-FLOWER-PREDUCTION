@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>IRIS FLOWER PREDICTION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body bgcolor="#b4cfc9">
+  <style>
+    body {
+      background-image: url('static/iris2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+
+  <center>
+
+    <h1> PREDICTION: </h1>
+
+    {%if data=='setosa'%}
+    <h1>Iris-setosa</h1>
+    <img src="static\setosa.jpg">
+    {%elif data == 'versicolor'%}
+    <h1>Iris-versicolor</h1>
+    <img src="static\versicolor1.jpg">
+    {%else%}
+    <h1>Iris-verginica</h1>
+    <img src="static\verginica1.jpg">
+
+    {%endif%}
+
+    <br><br>
+    <a href= "/"> go back to home page </a>
+
+    </center>
+
+</body>
+</html>

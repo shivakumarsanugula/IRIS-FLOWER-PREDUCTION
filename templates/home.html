@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IRIS FLOWER DETECTION</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+      background-image: url('static/iris2.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+<body bgcolor="#d4a3ae">
+    <center>
+    
+        <h1 style="color:rgba(8, 110, 243, 0.842);" > IRIS FLOWER DETECTION</h1>
+
+        <form method="POST" action='{{ url_for('home') }}'>
+            sepal_length : <input type="text" name="a" ,placeholder="enter value"><br><br>
+            sepal_width : <input type="text" name="b" ,placeholder="enter value"><br><br>
+            petal_length : <input type="text" name="c" ,placeholder="enter value"><br><br>
+            petal_width : <input type="text" name="d" ,placeholder="enter value"><br><br>
+            <input type= 'submit',value='predict'>
+        </form>
+</body>
+</html>
