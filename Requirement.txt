@@ -1,5 +1,6 @@
-Pandas
-Matplotlib.pyplot
-Numpy
-Seaborn
-Flask
+Pandas == 1.2.4
+Matplotlib >= 3.4.2
+Numpy >= 1.20.3
+Seaborn >= 0.11.1
+Flask == 2.0.0
+gunicorn == 20.1.0
